@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 24.8.1.2 (Linux)"/>
+	<meta name="author" content="Szepesi Glória Virág (Prodiák)"/>
+	<meta name="created" content="2025-01-13T20:35:00"/>
+	<meta name="changedby" content="Szepesi Glória Virág"/>
+	<meta name="changed" content="2025-01-14T16:49:02.162204800"/>
+	<meta name="AppVersion" content="16.0000"/>
+	<meta name="ClassificationContentMarkingFooterFontProps" content="#000000,10,Calibri"/>
+	<meta name="ClassificationContentMarkingFooterShapeIds" content="4,5,6"/>
+	<meta name="ClassificationContentMarkingFooterText" content="C1 - PUBLIC"/>
+	<meta name="ClassificationContentMarkingHeaderFontProps" content="#000000,10,Calibri"/>
+	<meta name="ClassificationContentMarkingHeaderShapeIds" content="1,2,3"/>
+	<meta name="ClassificationContentMarkingHeaderText" content="C1 - PUBLIC"/>
+	<meta name="Company" content="MOL Group"/>
+	<meta name="MSIP_Label_a177b0e0-5a09-469f-b814-50e13e6ca4f4_ActionId" content="87212f09-e7fc-44c0-a245-182823100d61"/>
+	<meta name="MSIP_Label_a177b0e0-5a09-469f-b814-50e13e6ca4f4_ContentBits" content="3"/>
+	<meta name="MSIP_Label_a177b0e0-5a09-469f-b814-50e13e6ca4f4_Enabled" content="true"/>
+	<meta name="MSIP_Label_a177b0e0-5a09-469f-b814-50e13e6ca4f4_Method" content="Privileged"/>
+	<meta name="MSIP_Label_a177b0e0-5a09-469f-b814-50e13e6ca4f4_Name" content="C1 - PUBLIC - General"/>
+	<meta name="MSIP_Label_a177b0e0-5a09-469f-b814-50e13e6ca4f4_SetDate" content="2025-01-13T21:55:44Z"/>
+	<meta name="MSIP_Label_a177b0e0-5a09-469f-b814-50e13e6ca4f4_SiteId" content="bb1717f5-9818-4fe9-a447-47ec90131452"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin-left: 0.98in; margin-right: 0.98in; margin-top: 0.49in; margin-bottom: 0.49in }
+		p { line-height: 115%; text-align: left; orphans: 2; widows: 2; margin-bottom: 0.1in; direction: ltr; background: transparent }
+		h1 { color: #2f5496; line-height: 108%; text-align: left; page-break-inside: avoid; orphans: 2; widows: 2; margin-bottom: 0in; direction: ltr; background: transparent; page-break-after: avoid }
+		h1.western { font-family: "Calibri Light", serif; font-size: 16pt }
+		h1.cjk { font-family: ; font-size: 16pt }
+		h1.ctl { font-family: ; font-size: 16pt }
+	</style>
+</head>
+<body lang="hu-HU" link="#000080" vlink="#800000" dir="ltr">
+<div title="header"><p style="line-height: 100%; margin-bottom: 0.45in">
+	<span class="sd-abs-pos" style="position: absolute; top: -0.49in; left: -0.98in; width: 89px"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFkAAAAkCAYAAADit5awAAAAa0lEQVRoge3QQREAIRDAsOP8e15UUB4kCjpdM/Nx1n874AUmB0wOmBwwOWBywOSAyQGTAyYHTA6YHDA5YHLA5IDJAZMDJgdMDpgcMDlgcsDkgMkBkwMmB0wOmBwwOWBywOSAyQGTAyYHTA5sSiEDRdVNDIUAAAAASUVORK5CYII=" name="Shape2" alt="Shape2" align="left" hspace="1" vspace="1" width="89" height="36"/>
+</span><span id="Frame2" dir="ltr" style="position: absolute; top: 0in; left: 0in; width: 0.49in; border: none; padding: 0in; background: #ffffff"><p style="line-height: 108%; margin-bottom: 0in">
+		<font color="#000000"><font face="Calibri, sans-serif"><font size="2" style="font-size: 10pt">C1
+		- PUBLIC</font></font></font></p>
+	</span><br/>
+
+	</p>
+</div><p style="line-height: 108%; margin-bottom: 0.11in">H5</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<h1 class="western" style="margin-top: 0in; page-break-before: always">
+A rendszer vezérlésének kidolgozása:</h1>
+<p style="line-height: 108%; margin-bottom: 0.11in">A rendszer elemei
+és objektumai aktív és passzív részből épülnek fel.
+Találhatóak benne tehát aktív elemek amik mozgásban vannak,
+dinamikájuk van, mozgó elemek. Ilyenek lesznek például a madár
+szimbólum ami a pályán fő karakterként végig haladva fog majd
+mozogni főleg egy síkban, vertikálisan. Ez a karakter a
+felhasználó által vezérelt, általában képernyőérintéssel
+irányítható. <br/>
+A rendszer következő aktív objektuma a
+csövek, amik ismétlődnek bár de a pályán folyamatos mozgásban
+vannak. A karakter mindig balról halad jobb irányba, amit az
+akadályok jobbra való mozgatása imitál. 
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">A passzív
+objektumok itt kapnak szerepet. A háttér maga egy adott kép /
+pálya / szimbólum ami statikus. Nem mozog így nem is igényel nagy
+figyelmet a játéktól. Ilyen passzív elem lehet még a föld ami
+egy külön rétegként is megjelenhet, adott esetben változtatható
+is lehet. 
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">A vezérlő
+objektum maga a játékmotor. Ez egy központi vezérlő objektum,
+amely a játék logikájának kezeléséért és irányításáért
+felelős. Ez a vezérlő elem biztosítja az összes többi objektum
+közötti kommunikációt és az események szinkronizációját. A
+játékmotor az, ami összekapcsolja a különböző komponenseket,
+például a grafikát, a fizikát és a felhasználói interakciókat,
+hogy a játék simán és összefüggően működjön. 
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"> <b>Játék
+Indítása és Leállítása</b>:</p>
+<ul>
+	<li><p style="line-height: 108%; margin-bottom: 0.11in"><b>Indítás</b>:
+	Az összes szükséges erőforrás betöltése (például textúrák,
+	hangok, beállítások), és a kezdeti állapotok beállítása.
+	Elindítja a játékmenetet, elindítja az időzítőt vagy a fő
+	ciklust.</p></li>
+	<li><p style="line-height: 108%; margin-bottom: 0.11in"><b>Leállítás</b>:
+	Az összes lefoglalt erőforrás felszabadítása, az állapotok
+	mentése, ha szükséges, és a játék biztonságos lezárása.</p></li>
+</ul>
+<p style="line-height: 108%; margin-bottom: 0.11in"><b>Játék
+Állapotának Kezelése</b>:</p>
+<ul>
+	<li><p style="line-height: 108%; margin-bottom: 0.11in"><b>Állapotkezelés</b>:
+	Különböző állapotokat kezel, például &quot;Főmenü&quot;,
+	&quot;Új Játék&quot;, &quot;Játék folytatása&quot;,
+	&quot;Beállítások&quot;, „Kilépés”. Az állapotok közötti
+	váltás irányítása.</p></li>
+	<li><p style="line-height: 108%; margin-bottom: 0.11in"><b>Frissítés</b>:
+	Rendszeresen frissíti az állapotokat (pl. minden egyes keretben),
+	frissíti az objektumok helyzetét és állapotát.</p></li>
+</ul>
+<p style="line-height: 108%; margin-bottom: 0.11in"><b>Események és
+Interakciók Kezelése</b>:</p>
+<ul>
+	<li><p style="line-height: 108%; margin-bottom: 0.11in"><b>Felhasználói
+	bemenet</b>: Kezeli a játékos beviteli eseményeit (például
+	érintések vagy kattintások), és ezekre megfelelően reagál.</p></li>
+	<li><p style="line-height: 108%; margin-bottom: 0.11in"><b>Ütközés
+	detektálás</b>: Figyeli és kezeli az objektumok közötti
+	ütközéseket, például amikor a madár nekimegy egy csőnek.</p></li>
+</ul>
+<p style="line-height: 108%; margin-bottom: 0.11in"><b>Játékmenet
+Szabályainak Kezelése</b>:</p>
+<ul>
+	<li><p style="line-height: 108%; margin-bottom: 0.11in"><b>Pontszám
+	Kezelés</b>: Nyomon követi és frissíti a játékos pontszámát,
+	amikor a madár áthalad a csövek között.</p></li>
+	<li><p style="line-height: 108%; margin-bottom: 0.11in"><b>Játékmenet
+	Logika</b>: Biztosítja a játékmenet szabályainak betartását,
+	például amikor a madár meghal, újraindítsa a játékot.</p></li>
+</ul>
+<p style="line-height: 108%; margin-bottom: 0.11in"><b>Grafikai
+Komponensek Irányítása</b>:</p>
+<ul>
+	<li><p style="line-height: 108%; margin-bottom: 0.11in"><b>Renderelés</b>:
+	Biztosítja, hogy az összes grafikai elem megfelelően jelenjen meg
+	a képernyőn.</p></li>
+</ul>
+<p style="line-height: 108%; margin-bottom: 0.11in">Itt egy egyszerű
+Pseudo-kód példa a játékmotor szerepére:</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">class JatekMotor:</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">   def
+__init__(self):</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">       
+self.allapot = &quot;Kezdőképernyő&quot;</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">       
+self.pontszam = 0</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">       
+self.madar = Madar()</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">       
+self.csovek = [Cso() for _ in range(5)]</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">    def
+jatek_inditas(self):</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">        #
+Beállítja a kezdeti állapotokat</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">       
+self.allapot = &quot;Játék&quot;</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">       
+self.madar.reset()</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">        for cso
+in self.csovek:</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">           
+cso.reset()</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">    def
+jatek_frissites(self):</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">        #
+Frissíti a játékelemeket minden keretben</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">        if
+self.allapot == &quot;Játék&quot;:</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">           
+self.madar.mozgas()</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">            for
+cso in self.csovek:</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">               
+cso.mozgas()</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">           
+self.utkozes_ellenorzes()</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">           
+self.pontszam_noveles()</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">    def
+utkozes_ellenorzes(self):</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">        #
+Ellenőrzi, hogy a madár ütközik-e valamelyik csővel</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">        for cso
+in self.csovek:</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">            if
+self.madar.utkozik(cso):</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">               
+self.jatek_vege()</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">   
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in; page-break-before: always">
+ def jatek_vege(self):</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">        # Kezeli
+a játék végét</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"> self.allapot =
+&quot;Játék vége&quot;</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">       
+print(&quot;Játék vége! Pontszám:&quot;, self.pontszam)</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">    def
+pontszam_noveles(self):</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">        # Növeli
+a pontszámot, ha a madár áthalad a csövek között</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">        for cso
+in self.csovek:</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">            if
+cso.atlepve(self.madar):</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">               
+self.pontszam += 1</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">A fő
+üzenetváltások a játékon belül a madár mozgásának
+érzékelése, itt értjük a test repülését és zuhanását a
+képernyő érintésével stimulálva. Amikor a madár sikeresen
+áthalad egy cső akadály között valamint sikeresen kikerül egy
+különleges akadályt a pontszámot növeli kell. Ezt is
+kommunikálnia kell a rendszernek. Ha az áthaladás sikertelen, és
+ütközés történik a játék ezt érzékeli és véget ér a
+játék. 
+</p>
+<h1 class="western">Osztályok közötti kapcsolatok implementálása:</h1>
+<p style="line-height: 108%; margin-bottom: 0.11in">A madár osztály
+implenetálásakor ez az osztály felel az irányítható entitás 
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">mozgásáért és
+ennek animációjáért. Itt kidolgozható a fő karakterhez
+kapcsolható különböző külső változtatások és a
+mozgáskultúrája. 
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">A cső osztályban
+képezhetjük le a akadályokért felelős algoritmusokat, amik
+legenerálják azokat valamint mozgatják őket az adott irányba. 
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">Valamint a fent
+említett, úgynevezett játékmotor osztály ami a fő mozgatórugó.
+Ez indítja a játékot, újraindítja valamint pontszámokat kezel.</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">Ezeken felül két
+implementációs osztályt írhatunk meg, egy fizikai és egy
+grafikai osztályt. Az előbbi kezeli a gravitáció nyújtotta
+hatásokat valamint az ütközések detektálását, az utóbbiban
+pedig megtalálhatóak a rajzok és grafikai elemek, hátterek,
+piktogramok. 
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">Ha ezeket
+modulokba szeretnénk szervezni az alábbiak szerint tennénk:</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">Lenne egy
+grafikus egy fizikai és egy játéklogikai modul.</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<h1 class="western">Implementációra irányuló skeleton példa:</h1>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><b>Példa egy
+alap Játékkezelő skeleton kódra:</b></p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">class JateKezelo:</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">    def
+__init__(self):</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">       
+self.current_level = None</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">       
+self.score = 0</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">       
+self.lives = 3</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">    def
+start_level(self, level_id):</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">       
+print(f&quot;Starting level {level_id}&quot;)</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">       
+self.current_level = Level(level_id)</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">    def
+level_complete(self):</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">       
+print(&quot;Level complete!&quot;)</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">       
+self.score += 100  # Példa pontszám hozzáadása</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">    def
+game_over(self):</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">       
+print(&quot;Game over!&quot;)</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><b>Példa egy
+Player skeletonra:</b></p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">class Player:</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">    def
+__init__(self, name):</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">        self.name
+= name</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">       
+self.position = [0, 0]</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">       
+self.speed = 5</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">       
+self.can_double_jump = True</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">    def
+move(self, direction):</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">       
+print(f&quot;Moving {direction} with speed {self.speed}&quot;)</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">    def
+jump(self):</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">       
+print(&quot;Jumping&quot;)</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">        if
+self.can_double_jump:</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">           
+print(&quot;Double jump!&quot;)</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<h1 class="western">Tesztelési tervek:</h1>
+<p style="line-height: 108%; margin-bottom: 0.11in">Több módon
+lehetne hibákat kiszűrni a rendszerből. Elsősorban a tesztek
+irányuljanak a játék főbb mozzanataira ami a JumpOrDie esetén a
+repülés, az ugrás, az ütközés, a pontszámítás. 
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">Nézzük meg
+először az ugrás folyamatát, érzékeli-e a fizikai környezet a
+bejövő hatásokat, és ezt helyesen kommunikálja-e a rendszer
+felé. Amennyiben igen, a fő mozgó entitás erre változtat e
+helyet és helyzetet. Alapvető funkciót tesztelő eset az akadályok
+megjelenítésének próbája. Időben hozza-e ezeket a játék, a
+megadott színben és formában jelennek-e meg. Amikor a madár
+sikeresen teljesítette az akadályt a pontszám sikeresen
+növekedett-e. Ezek lefedik a szoftver fő funkcióit és ezeknek a
+tesztelését. 
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in">Elemezhetünk
+kritikus hibákat, amik főként olyan dolgokra fókuszál, amelyek
+jelentős hatással lennének a szoftver működésére. 
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 108%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<div title="footer"><p style="line-height: 100%; margin-top: 0.45in; margin-bottom: 0in">
+	<span class="sd-abs-pos" style="position: absolute; top: 0.3in; left: -0.98in; width: 89px"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFkAAAAkCAYAAADit5awAAAAa0lEQVRoge3QQREAIRDAsOP8e15UUB4kCjpdM/Nx1n874AUmB0wOmBwwOWBywOSAyQGTAyYHTA6YHDA5YHLA5IDJAZMDJgdMDpgcMDlgcsDkgMkBkwMmB0wOmBwwOWBywOSAyQGTAyYHTA5sSiEDRdVNDIUAAAAASUVORK5CYII=" name="Shape4" alt="Shape4" align="left" hspace="1" width="89" height="36"/>
+</span><span id="Frame4" dir="ltr" style="position: absolute; top: 0in; left: 0in; width: 0.49in; border: none; padding: 0in; background: #ffffff"><p style="line-height: 108%; margin-bottom: 0in">
+		<font color="#000000"><font face="Calibri, sans-serif"><font size="2" style="font-size: 10pt">C1
+		- PUBLIC</font></font></font></p>
+	</span><br/>
+
+	</p>
+</div>
+</body>
+</html>
